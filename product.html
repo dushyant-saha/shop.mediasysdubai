@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediasys Store</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+      --color-clifford: #da373d;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Marquee Section -->
+    <div class="offers-and-settings relative bg-white">
+        <div class="offers marquee w-full h-8 shadow-xs flex">
+            <ul class="flex marquee-content block w-fit items-center">
+                <li
+                    class="offer relative items-center px-4 after:content-[''] after:h-[50%] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <span class="uppercase text-xs font-semibold text-white bg-[#005680] px-4 rounded-sm">free
+                        shipping</span>
+                    <span class="text-sm/6.5 text-gray-600">For all orders within UAE</span>
+                </li>
+                <li
+                    class="offer relative items-center px-4 after:content-[''] after:h-[50%] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <span class="uppercase text-xs font-semibold text-white bg-[#005680] px-4 rounded-sm">30-Days
+                        Return</span>
+                    <span class="text-sm/6.5 text-gray-600">If goods have problems</span>
+                </li>
+                <li
+                    class="offer relative items-center px-4 after:content-[''] after:h-[50%] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <span class="uppercase text-xs font-semibold text-white bg-[#005680] px-4 rounded-sm">Secure
+                        Payments</span>
+                    <span class="text-sm/6.5 text-gray-600">100% secure payment</span>
+                </li>
+                <li
+                    class="offer relative items-center px-4 after:content-[''] after:h-[50%] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <span class="uppercase text-xs font-semibold text-white bg-[#005680] px-4 rounded-sm">24/7
+                        Support</span>
+                    <span class="text-sm/6.5 text-gray-600">Dedicated Support</span>
+                </li>
+            </ul>
+        </div>
+        <div class="settings absolute top-0 right-0 h-full hidden md:flex backdrop-blur-lg px-6">
+            <ul class="flex items-center">
+                <li
+                    class="relative items-center pe-4 after:content-[''] after:h-[15px] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <a href="#" class="text-sm text-gray-400">Store Location</a>
+                </li>
+                <li
+                    class="relative items-center after:content-[''] after:h-[15px] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <el-dropdown class="inline-block">
+                        <button
+                            class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold cursor-pointer items-center">
+                            <img src="./assets/flags/UAE.svg" alt="UAE" class="h-4" />
+                            <span id="currency">AED</span>
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                class="-mr-1 size-5 text-gray-400 items-center">
+                                <path
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <el-menu anchor="bottom end" popover
+                            class="origin-top-right rounded-md outline-1 -outline-offset-1 outline-white/10 bg-white/95 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in backdrop-blur-sm shadow-lg">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm focus:bg-sky-600 focus:text-white focus:outline-hidden flex items-center gap-1">
+                                    <img src="./assets/flags/Canada.svg" alt="CAD" class="h-4" />CAD
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm focus:bg-sky-600 focus:text-white focus:outline-hidden flex items-center gap-1">
+                                    <img src="./assets/flags/US.svg" alt="USD" class="h-4" />USD
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm focus:bg-sky-600 focus:text-white focus:outline-hidden flex items-center gap-1">
+                                    <img src="./assets/flags/UAE.svg" alt="AED" class="h-4" />AED
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm focus:bg-sky-600 focus:text-white focus:outline-hidden flex items-center gap-1">
+                                    <img src="./assets/flags/India.svg" alt="INR" class="h-4" />INR
+                                </a>
+                            </div>
+                        </el-menu>
+                    </el-dropdown>
+                </li>
+                <li
+                    class="relative items-center px-4 after:content-[''] after:h-[15px] after:border after:border-gray-300 after:absolute after:top-[50%] after:right-0 after:translate-y-[-50%]">
+                    <a href="#" class="text-sm font-semibold">Language: ENG-UK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav aria-label="Top"
+        class="sticky top-0 z-40 bg-white/95 backdrop-blur-md mx-auto px-4 sm:px-6 lg:px-8 transition-shadow shadow-2xs">
+        <div class="border-b border-gray-200">
+            <div class="flex h-16 items-center justify-between gap-2">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="relative rounded-md bg-white p-2 text-gray-400 lg:hidden shrink-0">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <!-- Logo -->
+                <div class="ml-2 flex lg:ml-0 shrink-0">
+                    <a href="./_index.html">
+                        <span class="sr-only">Mediasys</span>
+                        <img src="./assets/logo/logo.png" alt="Mediasys Logo"
+                            class="h-8 w-auto max-w-28 object-contain" />
+                    </a>
+                </div>
+                <!-- Search -->
+                <div class="hidden md:flex lg:mx-6 grow justify-center gap-x-2 min-w-0">
+                    <el-dropdown class="inline-block">
+                        <button
+                            class="inline-flex w-full justify-center gap-x-1.5 px-3 py-2 text-sm font-semibold inset-ring-1 inset-ring-white/5 text-black h-full items-center bg-white/10 hover:bg-white/40 hover:shadow-lg border-2 border-gray-200 rounded-md text-gray-500 cursor-pointer transition">
+                            Categories
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                class="-mr-1 size-5 text-gray-400">
+                                <path
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <el-menu anchor="bottom end" popover
+                            class="w-fit origin-top-right rounded-md outline-1 -outline-offset-1 outline-white/10 bg-white transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in text-gray-500 shadow-lg">
+                            <div class="py-1 text-sm text-gray-500">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-50">All</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-50">AJA Video Systems</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-50">Chaos</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-50">Maxon</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-50">OWC</a>
+                            </div>
+                        </el-menu>
+                    </el-dropdown>
+                    <div
+                        class="flex items-center rounded-md bg-white/5 border-2 border-gray-200 w-full sm:w-sm font-semibold min-w-0">
+                        <input id="search-text" type="text" name="search-bar" placeholder="Search the Mediasys Store"
+                            class="block min-w-0 grow py-1.5 px-2 text-base placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                    </div>
+                    <a href="#"
+                        class="p-2 rounded-md text-white bg-sky-500 hover:bg-blue-400 h-fit my-auto transition duration-175">
+                        <span class="sr-only">Search</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" data-slot="icon"
+                            aria-hidden="true" class="size-5">
+                            <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Sign-In / Wishlist / Cart -->
+                <div class="flex items-center shrink-0">
+                    <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>
+                        <span aria-hidden="true" class="h-6 w-px bg-gray-200"></span>
+                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>
+                    </div>
+                    <div class="ml-4 flow-root lg:ml-6">
+                        <a href="#" class="group -m-2 flex items-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                            <span id="nav-wishlist-count"
+                                class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                        </a>
+                    </div>
+                    <div class="ml-4 flow-root lg:ml-6">
+                        <a href="#" class="group -m-2 flex items-center p-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true"
+                                class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
+                                <path
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span id="nav-cart-count"
+                                class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <el-dialog>
+    <dialog id="mobile-menu" aria-labelledby="mobile-menu-title"
+      class="backdrop:bg-black/40 m-0 max-h-none max-w-none w-full h-full bg-transparent p-0">
+      <div class="fixed inset-0 flex">
+        <div class="relative mr-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white shadow-xl">
+          <div class="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+            <h2 id="mobile-menu-title" class="text-base font-semibold text-gray-900">Menu</h2>
+            <button type="button" command="close" commandfor="mobile-menu"
+              class="rounded-md p-2 text-gray-400 hover:bg-gray-100">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <nav class="px-4 py-4 space-y-1">
+            <a href="#"
+              class="block rounded-lg px-3 py-2 text-sm font-medium text-blue-500 hover:bg-sky-600 hover:text-white">Hot
+              Deals</a>
+            <a href="#"
+              class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-sky-600 hover:text-white">Broadcast
+              Solutions</a>
+            <a href="#"
+              class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-sky-600 hover:text-white">Pro-AV
+              Solutions</a>
+            <a href="#"
+              class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-sky-600 hover:text-white">Workstations</a>
+            <a href="#"
+              class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-sky-600 hover:text-white">Software</a>
+          </nav>
+          <div class="mt-auto border-t border-gray-200 px-4 py-4 space-y-3">
+            <a href="#" class="block text-sm font-medium text-gray-700">Sign in</a>
+            <a href="#" class="block text-sm font-medium text-gray-700">Create account</a>
+            <a href="#" class="block text-sm text-gray-500">Store Location</a>
+            <p class="text-sm text-gray-500">Language: ENG-UK</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </el-dialog>
+
+    <!-- Breadcrumb Bar (Screenshot 2) -->
+    <div class="bg-[#f4f5f7] border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+            <nav aria-label="Breadcrumb" class="flex items-center text-xs sm:text-sm text-gray-600">
+                <a href="./_index.html" class="text-[#0197d6] hover:underline font-medium">Home</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <a href="#" class="text-[#0197d6] hover:underline font-medium">Shop</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span id="breadcrumb-current" class="text-gray-700 font-medium">Maxon One</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Product Showcase Section -->
+    <main class="bg-white py-8 sm:py-12 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Responsive Layout: -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-10 items-start">
+
+                <!-- Product Gallery -->
+                <div class="lg:col-span-5 flex flex-col-reverse sm:flex-row gap-4 lg:sticky lg:top-24">
+                    <!-- Vertical Thumbnail Strip -->
+                    <div id="product-thumbnails"
+                        class="flex sm:flex-col gap-3 shrink-0 overflow-x-auto sm:overflow-visible py-1">
+                        <button type="button" data-index="0"
+                            class="prod-thumb active size-16 sm:size-20 rounded-2xl border-2 border-gray-900 bg-white p-2 flex items-center justify-center cursor-pointer transition-all shadow-2xs shrink-0">
+                            <img src="./assets/product-images/Maxon_One.jpg"
+                                onerror="this.src='https://placehold.co/400x400/ffffff/111827?text=Maxon+One'"
+                                alt="Maxon One Thumbnail 1" class="max-h-full max-w-full object-contain" />
+                        </button>
+                        <button type="button" data-index="1"
+                            class="prod-thumb size-16 sm:size-20 rounded-2xl border border-gray-200 bg-white p-2 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all shrink-0">
+                            <img src="./assets/product-images/Maxon_c4d.jpg"
+                                onerror="this.src='https://placehold.co/400x400/ffffff/0197d6?text=Cinema+4D'"
+                                alt="Maxon One Thumbnail 2" class="max-h-full max-w-full object-contain" />
+                        </button>
+                        <button type="button" data-index="2"
+                            class="prod-thumb size-16 sm:size-20 rounded-2xl border border-gray-200 bg-white p-2 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all shrink-0">
+                            <img src="./assets/product-images/Maxon_RG.jpg"
+                                onerror="this.src='https://placehold.co/400x400/ffffff/e11d48?text=Red+Giant'"
+                                alt="Maxon One Thumbnail 3" class="max-h-full max-w-full object-contain" />
+                        </button>
+                        <button type="button" data-index="3"
+                            class="prod-thumb size-16 sm:size-20 rounded-2xl border border-gray-200 bg-white p-2 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all shrink-0">
+                            <img src="./assets/product-images/Maxon_universe.jpg"
+                                onerror="this.src='https://placehold.co/400x400/ffffff/7c3aed?text=Universe'"
+                                alt="Maxon One Thumbnail 4" class="max-h-full max-w-full object-contain" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="relative flex-1 bg-[#f8f9fa] rounded-3xl p-6 sm:p-10 flex items-center justify-center min-h-[340px] sm:min-h-[460px] border border-gray-100 group overflow-hidden">
+                        <!-- Official Partner Floating Pill -->
+                        <div
+                            class="absolute top-4 left-4 z-10 inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-xs px-3 py-1 rounded-full text-xs font-semibold text-gray-700 shadow-2xs border border-gray-200/80">
+                            <span class="size-2 rounded-full bg-[#107c10]"></span> Authorized Reseller
+                        </div>
+
+                        <!-- Main Product Image -->
+                        <img id="main-product-image" src="./assets/product-images/Maxon_One.jpg"
+                            onerror="this.src='https://placehold.co/600x600/f8f9fa/111827?text=Maxon+One'"
+                            alt="Maxon One"
+                            class="max-h-[300px] sm:max-h-[360px] w-auto object-contain transition-all duration-300 ease-out select-none" />
+
+                        <!-- Prev Arrow -->
+                        <button type="button" id="gallery-prev" aria-label="Previous image"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 size-10 rounded-full bg-white text-gray-700 shadow-md border border-gray-100 flex items-center justify-center hover:bg-[#0197d6] hover:text-white hover:border-[#0197d6] transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2"
+                                stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+
+                        <!-- Next Arrow -->
+                        <button type="button" id="gallery-next" aria-label="Next image"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 size-10 rounded-full bg-[#005680] text-white shadow-md flex items-center justify-center hover:bg-[#0197d6] transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2"
+                                stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 flex flex-col space-y-5">
+                    <div>
+                        <div class="flex items-start justify-between gap-4">
+                            <h1 id="product-title"
+                                class="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
+                                Maxon One
+                            </h1>
+                            <button type="button" id="share-product-btn" aria-label="Share product"
+                                title="Copy product link"
+                                class="size-10 rounded-full border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 hover:text-[#0197d6] flex items-center justify-center shrink-0 transition cursor-pointer shadow-2xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3 mt-2 text-xs sm:text-sm text-gray-500">
+                            <span>Brand: <a href="#" id="product-brand"
+                                    class="text-[#0197d6] font-medium hover:underline">Maxon</a></span>
+                            <span class="text-gray-300">|</span>
+                            <div class="flex items-center gap-1.5">
+                                <div class="flex text-amber-400 text-xs">
+                                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                </div>
+                                <a href="#tab-reviews" id="review-jump-link"
+                                    class="text-gray-500 hover:text-[#0197d6]">No reviews
+                                    yet</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="pt-3 border-t border-gray-200">
+                        <div class="flex flex-wrap items-baseline gap-3">
+                            <span id="product-price" class="text-2xl sm:text-3xl font-bold text-[#107c10]">AED
+                                6,000.00</span>
+                            <span id="product-old-price" class="text-sm text-gray-400 line-through">MRP AED
+                                7,200.00</span>
+                            <span id="product-discount-badge"
+                                class="bg-[#b91c47] text-white text-xs font-bold px-3 py-1 rounded-full">17% OFF</span>
+                            <span class="text-xs text-gray-400">(Excl. VAT)</span>
+                        </div>
+
+                        <div class="mt-3 space-y-1.5 text-sm">
+                            <p class="text-gray-800 font-medium">
+                                Sold By: <a href="#"
+                                    class="text-[#0197d6] font-bold hover:underline uppercase">MEDIASYS</a>
+                            </p>
+                            <p id="product-subtitle" class="text-gray-600">Maxon One 1 Year</p>
+                        </div>
+                    </div>
+
+                    <!-- Option Pills -->
+                    <div class="pt-3 border-t border-gray-200 space-y-3">
+                        <div class="text-sm">
+                            <span class="text-gray-600">Subscription Plan: </span>
+                            <strong id="selected-plan-label" class="text-gray-900 font-semibold">Annual License (1
+                                Year)</strong>
+                        </div>
+                        <div class="flex flex-wrap gap-2.5" id="plan-options">
+                            <button type="button" data-plan="Annual License (1 Year)" data-price="AED 6,000.00"
+                                data-old="MRP AED 7,200.00" data-sub="Maxon One 1 Year" data-sku="MXO-Y"
+                                class="plan-pill active px-4 py-2.5 rounded-xl border-2 border-gray-900 bg-white text-gray-900 text-xs sm:text-sm font-semibold cursor-pointer transition">
+                                Annual License (1 Year)
+                            </button>
+                            <button type="button" data-plan="Teams Floating (1 Year)" data-price="AED 6,850.00"
+                                data-old="MRP AED 8,000.00" data-sub="Maxon One Teams 1 Year" data-sku="MXO-T-Y"
+                                class="plan-pill px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-gray-600 hover:border-gray-400 text-xs sm:text-sm font-medium cursor-pointer transition">
+                                Teams Floating (1 Year)
+                            </button>
+                            <button type="button" data-plan="3-Year Enterprise" disabled
+                                class="px-4 py-2.5 rounded-xl border border-rose-200 bg-rose-50/40 text-rose-300 text-xs sm:text-sm font-medium line-through cursor-not-allowed">
+                                3-Year Enterprise
+                            </button>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 pt-1">
+                            <span
+                                class="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200/80 text-gray-600 text-xs font-medium">Cinema
+                                4D Included</span>
+                            <span
+                                class="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200/80 text-gray-600 text-xs font-medium">Redshift
+                                GPU</span>
+                            <span
+                                class="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200/80 text-gray-600 text-xs font-medium">ZBrush
+                                &amp; Red Giant</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl px-4 py-3 flex items-center gap-2.5 text-xs sm:text-sm text-gray-800">
+                        <span class="size-2.5 rounded-full bg-[#16a34a] animate-pulse shrink-0"></span>
+                        <p>Order within <strong id="dispatch-timer" class="text-[#15803d] font-bold">06:45 hrs</strong>
+                            for
+                            priority license provisioning</p>
+                    </div>
+
+                    <!-- Purchase Controls: Quantity + Add to Cart + Buy Now + Wishlist -->
+                    <div class="pt-2 pb-4 border-b border-gray-200 space-y-3">
+                        <label for="prod-qty-input"
+                            class="block text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            Quantity
+                        </label>
+                        <div class="flex flex-wrap items-center gap-3">
+                            <div class="inline-flex items-center border border-gray-300 rounded-xl h-12 bg-white">
+                                <button type="button" id="prod-qty-minus" aria-label="Decrease quantity"
+                                    class="px-4 h-full text-gray-500 hover:text-black transition cursor-pointer text-lg font-medium">&minus;</button>
+                                <input id="prod-qty-input" type="text" value="1" readonly
+                                    class="w-11 text-center text-sm font-semibold text-gray-900 focus:outline-none" />
+                                <button type="button" id="prod-qty-plus" aria-label="Increase quantity"
+                                    class="px-4 h-full text-gray-500 hover:text-black transition cursor-pointer text-lg font-medium">&plus;</button>
+                            </div>
+
+                            <button type="button" id="add-to-cart-btn"
+                                class="flex-1 min-w-[160px] h-12 bg-[#0197d6] hover:bg-[#0182b8] text-white font-semibold text-sm rounded-full shadow-xs transition duration-175 cursor-pointer px-6 flex items-center justify-center gap-2">
+                                <span>Add to cart</span>
+                            </button>
+
+                            <!-- Heart Button -->
+                            <button type="button" id="wishlist-toggle-btn" aria-label="Add to wishlist"
+                                class="size-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-rose-500 hover:border-rose-200 hover:bg-rose-50/50 transition cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Buy Now -->
+                        <button type="button" id="buy-now-btn"
+                            class="w-full h-12 bg-[#14141f] hover:bg-gray-800 text-white font-semibold text-sm rounded-full shadow-xs transition duration-175 cursor-pointer">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <div class="space-y-1.5 text-xs sm:text-sm">
+                        <p class="text-gray-800 font-medium">Expected Delivery: <span
+                                class="font-normal text-gray-700">1-2
+                                weeks</span></p>
+                        <p class="font-bold">
+                            <span class="text-[#107c10]">In Stock</span> :
+                            <span class="text-[#f59e0b]">Special order available</span>
+                        </p>
+                        <p class="text-red-500 italic text-xs">*No cancellations, Check out our returns policy</p>
+
+                        <div class="pt-3 space-y-1.5 text-xs sm:text-sm text-gray-600">
+                            <p><strong class="text-gray-800 font-semibold">SKU:</strong> <span
+                                    id="product-sku">MXO-Y</span></p>
+                            <p>
+                                <strong class="text-gray-800 font-semibold">Categories:</strong>
+                                <a href="/category/3D-GFX-VFX-Tools" class="text-[#0197d6] hover:underline">3D GFX &amp;
+                                    VFX Tools</a>
+                            </p>
+                            <p>
+                                <strong class="text-gray-800 font-semibold">Tags:</strong>
+                                <span class="text-gray-500">Maxon One, design, animation, creative workflow</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="lg:col-span-3 space-y-6">
+                    <div class="bg-[#f4f5f7] rounded-2xl p-5 sm:p-6 space-y-5 border border-gray-200/70">
+                        <!-- Feature 1: Globe -->
+                        <div class="flex items-start gap-3.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="size-7 text-gray-800 shrink-0 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                            <p class="text-xs sm:text-sm text-gray-700 leading-snug">
+                                We ships to all over middle-east
+                            </p>
+                        </div>
+
+                        <!-- Feature 2: 7-Day Return -->
+                        <div class="flex items-start gap-3.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="size-7 text-gray-800 shrink-0 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+                            <p class="text-xs sm:text-sm text-gray-700 leading-snug">
+                                Free 7-day return if eligible, so easy
+                            </p>
+                        </div>
+
+                        <!-- Feature 3: Supplier Bills -->
+                        <div class="flex items-start gap-3.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="size-7 text-gray-800 shrink-0 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                            </svg>
+                            <p class="text-xs sm:text-sm text-gray-700 leading-snug">
+                                Supplier give bills for this product.
+                            </p>
+                        </div>
+
+                        <!-- Feature 4: Pay Online -->
+                        <div class="flex items-start gap-3.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="size-7 text-gray-800 shrink-0 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                            </svg>
+                            <p class="text-xs sm:text-sm text-gray-700 leading-snug">
+                                Pay online or when receiving goods
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-2xs">
+                        <div class="bg-[#f4f5f7] px-5 py-3.5 border-b border-gray-200">
+                            <h3 class="text-sm font-semibold text-gray-900">More from the Maxon</h3>
+                        </div>
+                        <div class="p-5">
+                            <div class="border border-gray-100 rounded-xl p-4 flex flex-col">
+                                <a href="#" class="h-44 flex items-center justify-center p-4 group">
+                                    <img src="./assets/product-images/Maxon_c4d.jpg"
+                                        onerror="this.src='https://placehold.co/320x320/ffffff/111827?text=Cinema+4D'"
+                                        alt="Cinema 4D"
+                                        class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
+                                </a>
+                                <div class="border-t border-gray-100 pt-3 mt-2 space-y-1.5">
+                                    <a href="#" class="text-sm text-[#0197d6] hover:underline font-medium block">Cinema
+                                        4D</a>
+                                    <p class="text-sm font-bold text-[#107c10]">AED 3,622.00</p>
+                                    <button type="button"
+                                        class="sidebar-add-cart w-full mt-2 bg-[#0197d6] hover:bg-[#0182b8] text-white text-xs sm:text-sm font-semibold py-2.5 rounded-lg transition cursor-pointer">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="mt-14 pt-6">
+                <div class="border-b border-gray-200 overflow-x-auto">
+                    <nav class="flex gap-6 sm:gap-9 min-w-max" aria-label="Product details tabs" id="product-tabs-nav">
+                        <button type="button" data-tab="tab-description"
+                            class="prod-tab-btn active pb-3.5 text-sm sm:text-base font-bold text-gray-900 border-b-2 border-[#0197d6] cursor-pointer transition">
+                            Description
+                        </button>
+                        <button type="button" data-tab="tab-specification"
+                            class="prod-tab-btn pb-3.5 text-sm sm:text-base font-semibold text-gray-500 hover:text-gray-800 border-b-2 border-transparent cursor-pointer transition">
+                            Specification
+                        </button>
+                        <button type="button" data-tab="tab-vendor"
+                            class="prod-tab-btn pb-3.5 text-sm sm:text-base font-semibold text-gray-500 hover:text-gray-800 border-b-2 border-transparent cursor-pointer transition">
+                            Vendor
+                        </button>
+                        <button type="button" data-tab="tab-reviews"
+                            class="prod-tab-btn pb-3.5 text-sm sm:text-base font-semibold text-gray-500 hover:text-gray-800 border-b-2 border-transparent cursor-pointer transition">
+                            Reviews
+                        </button>
+                        <button type="button" data-tab="tab-shipping"
+                            class="prod-tab-btn pb-3.5 text-sm sm:text-base font-semibold text-gray-500 hover:text-gray-800 border-b-2 border-transparent cursor-pointer transition">
+                            Shipping Info
+                        </button>
+                        <button type="button" data-tab="tab-qa"
+                            class="prod-tab-btn pb-3.5 text-sm sm:text-base font-semibold text-gray-500 hover:text-gray-800 border-b-2 border-transparent cursor-pointer transition">
+                            Questions and Answers
+                        </button>
+                    </nav>
+                </div>
+
+                <!-- Tab Panels -->
+                <div class="py-8 text-sm sm:text-base text-gray-700 leading-relaxed">
+                    <div id="tab-description" class="prod-tab-panel space-y-4 max-w-4xl">
+                        <p>
+                            Introducing <strong class="font-semibold text-gray-900">Maxon One</strong> - the ultimate
+                            subscription
+                            bundle for 3D artists and motion designers. With Maxon One, you gain instant access to a
+                            comprehensive
+                            suite of creative tools to bring your projects to life. Here's what you get:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong class="text-gray-900">Cinema 4D:</strong> Easy-to-learn and extremely powerful
+                                3D modeling,
+                                animation, simulation, and rendering software.</li>
+                            <li><strong class="text-gray-900">Redshift:</strong> The world's first fully
+                                GPU-accelerated, biased
+                                renderer built to meet the specific demands of contemporary high-end production
+                                rendering.</li>
+                            <li><strong class="text-gray-900">ZBrush:</strong> Industry-standard digital sculpting and
+                                painting
+                                software enabling customizable brushes to shape, texture, and paint virtual clay.</li>
+                            <li><strong class="text-gray-900">Red Giant Complete:</strong> The complete set of tools for
+                                filmmakers
+                                and motion designers, including Trapcode, Magic Bullet, VFX, and PluralEyes.</li>
+                            <li><strong class="text-gray-900">Universe:</strong> GPU-accelerated video transition and
+                                effects plugins
+                                for editors and motion graphics artists.</li>
+                            <li><strong class="text-gray-900">Forger &amp; Capsules:</strong> Mobile sculpting workflows
+                                and curated
+                                Maxon asset library access directly inside Cinema 4D.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Specification Panel -->
+                    <div id="tab-specification" class="prod-tab-panel hidden max-w-3xl">
+                        <div class="overflow-hidden rounded-xl border border-gray-200">
+                            <table class="w-full text-left text-sm">
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="bg-gray-50">
+                                        <th class="py-3.5 px-4 font-semibold text-gray-800 w-1/3">Brand</th>
+                                        <td class="py-3.5 px-4 text-gray-600">Maxon</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3.5 px-4 font-semibold text-gray-800">SKU</th>
+                                        <td class="py-3.5 px-4 text-gray-600">MXO-Y</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <th class="py-3.5 px-4 font-semibold text-gray-800">License Duration</th>
+                                        <td class="py-3.5 px-4 text-gray-600">1 Year Subscription (Annual)</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3.5 px-4 font-semibold text-gray-800">Supported OS</th>
+                                        <td class="py-3.5 px-4 text-gray-600">Windows 10 / 11 (64-bit), macOS 12.6+
+                                            (Apple Silicon &amp;
+                                            Intel)</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <th class="py-3.5 px-4 font-semibold text-gray-800">Delivery Method</th>
+                                        <td class="py-3.5 px-4 text-gray-600">Electronic License Assignment via MyMaxon
+                                            Portal</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Vendor Panel -->
+                    <div id="tab-vendor" class="prod-tab-panel hidden max-w-3xl space-y-2">
+                        <h4 class="font-bold text-gray-900 text-lg">MEDIASYS</h4>
+                        <p class="text-gray-600">
+                            Authorized distributor and systems integrator for broadcast, Pro-AV, workstation hardware,
+                            and 3D VFX
+                            software across the Middle East. Office #1114, Grosvenor Business Tower, Barsha Heights -
+                            TECOM, Dubai,
+                            UAE.
+                        </p>
+                    </div>
+
+                    <!-- Reviews Panel -->
+                    <div id="tab-reviews" class="prod-tab-panel hidden max-w-2xl space-y-4">
+                        <p class="text-gray-500">There are no reviews yet for <strong class="text-gray-800">Maxon
+                                One</strong>.</p>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-4">
+                            <h4 class="font-semibold text-gray-900">Be the first to review &ldquo;Maxon One&rdquo;</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <input type="text" placeholder="Your Name"
+                                    class="w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-sm focus:outline-none focus:border-[#0197d6]" />
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-sm focus:outline-none focus:border-[#0197d6]" />
+                            </div>
+                            <textarea rows="3" placeholder="Write your review..."
+                                class="w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-sm focus:outline-none focus:border-[#0197d6]"></textarea>
+                            <button type="button"
+                                class="bg-[#0197d6] hover:bg-[#0182b8] text-white text-sm font-semibold px-6 py-2.5 rounded-xl transition cursor-pointer">
+                                Submit Review
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Info Panel -->
+                    <div id="tab-shipping" class="prod-tab-panel hidden max-w-3xl space-y-2">
+                        <p>
+                            <strong class="text-gray-900">Expected Delivery:</strong> 1-2 weeks for special order
+                            license provisioning
+                            and physical tax invoice dispatch across the UAE and Middle East.
+                        </p>
+                        <p class="text-red-500 italic text-sm">*No cancellations once software license keys are issued.
+                            Check out
+                            our returns policy for hardware eligibility.</p>
+                    </div>
+
+                    <!-- Questions and Answers Panel -->
+                    <div id="tab-qa" class="prod-tab-panel hidden max-w-3xl space-y-4">
+                        <div class="border border-gray-200 rounded-xl p-4">
+                            <p class="font-semibold text-gray-900">Q: Does this include Redshift for Cinema 4D and other
+                                DCCs?</p>
+                            <p class="text-gray-600 text-sm mt-1">A: Yes, Maxon One includes the full Redshift GPU
+                                renderer license
+                                compatible with Cinema 4D, Maya, 3ds Max, Blender, and Houdini.</p>
+                        </div>
+                        <div class="border border-gray-200 rounded-xl p-4">
+                            <p class="font-semibold text-gray-900">Q: Do you provide an official UAE VAT invoice?</p>
+                            <p class="text-gray-600 text-sm mt-1">A: Yes, Mediasys provides full commercial tax invoices
+                                for corporate
+                                and studio procurement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="top-categories mt-12 px-4">
+        <div class="container mx-auto">
+            <h1 class="text-left font-semibold text-2xl mb-5 body-category">Related Maxon Software
+                <a href="./_index.html"
+                    class="flex items-center justify-between px-6 sm:px-8 py-4 text-sm font-semibold text-gray-800 bg-white hover:bg-gray-50 hover:text-[#0197d6] transition group category-link">
+                    <span>View more</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="size-4 transition-transform group-hover:translate-x-1 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </h1>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <li
+                    class="product-card-item hover:shadow-lg transition duration-175 rounded-xl overflow-clip w-full max-w-80">
+                    <div class="product-card group w-full bg-white" data-brand="Maxon" data-sku="MXO-C4D-Y"
+                        data-category="3D GFX & VFX Tools" data-tags="Cinema 4D, 3D Modeling, Animation, Simulation"
+                        data-desc="Professional 3D modeling, animation, simulation and rendering software solution.">
+                        <div class="product-image pt-[20px] px-[26px] pb-[34px] relative h-[250px] overflow-hidden">
+                            <div class="product-view h-full">
+                                <div class="product-view-cell w-full h-full">
+                                    <img src="./assets/product-images/Maxon_c4d.jpg"
+                                        onerror="this.src='https://placehold.co/400x400/ffffff/111827?text=Cinema+4D'"
+                                        class="w-full h-full object-contain" alt="Cinema 4D">
+                                </div>
+                            </div>
+                            <div class="hover-area absolute inset-0 z-10"></div>
+                            <button type="button" aria-label="Quick view"
+                                class="quickview-btn absolute top-3 right-3 z-30 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-700 opacity-0 translate-y-1 scale-90 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 hover:bg-[#0197d6] hover:text-white hover:border-[#0197d6] transition-all duration-200 ease-out cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info p-4">
+                            <h2 class="product-title text-lg font-semibold">Cinema 4D</h2>
+                            <div class="product-price-row flex flex-wrap items-center gap-3 mt-3">
+                                <span class="product-price text-xl font-bold">AED 3,622</span>
+                                <span class="product-old-price text-gray-400 line-through">AED 4,500</span>
+                                <span
+                                    class="product-discount bg-black text-white text-xs font-bold px-2 py-1 rounded">20%
+                                    OFF</span>
+                            </div>
+                            <button
+                                class="choose-options-btn w-full mt-4 bg-[#0188bc] text-white text-sm py-3 rounded-xl transition hover:bg-[#01a3e2] hover:cursor-pointer duration-175">
+                                Choose options
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 2 -->
+                <li
+                    class="product-card-item hover:shadow-lg transition duration-175 rounded-xl overflow-clip w-full max-w-80">
+                    <div class="product-card group w-full bg-white" data-brand="Maxon" data-sku="MXO-RG-Y"
+                        data-category="3D GFX & VFX Tools" data-tags="Red Giant, Trapcode, Magic Bullet, VFX"
+                        data-desc="Complete suite of plugins for filmmakers, editors and motion graphics artists.">
+                        <div class="product-image pt-[20px] px-[26px] pb-[34px] relative h-[250px] overflow-hidden">
+                            <div class="product-view h-full">
+                                <div class="product-view-cell w-full h-full">
+                                    <img src="./assets/product-images/Maxon_RG.jpg"
+                                        onerror="this.src='https://placehold.co/400x400/ffffff/e11d48?text=Red+Giant'"
+                                        class="w-full h-full object-contain" alt="Red Giant">
+                                </div>
+                            </div>
+                            <div class="hover-area absolute inset-0 z-10"></div>
+                            <button type="button" aria-label="Quick view"
+                                class="quickview-btn absolute top-3 right-3 z-30 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-700 opacity-0 translate-y-1 scale-90 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 hover:bg-[#0197d6] hover:text-white hover:border-[#0197d6] transition-all duration-200 ease-out cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info p-4">
+                            <h2 class="product-title text-lg font-semibold">Red Giant</h2>
+                            <div class="product-price-row flex flex-wrap items-center gap-3 mt-3">
+                                <span class="product-price text-xl font-bold">AED 2,899</span>
+                                <span class="product-old-price text-gray-400 line-through">AED 3,600</span>
+                                <span
+                                    class="product-discount bg-black text-white text-xs font-bold px-2 py-1 rounded">19%
+                                    OFF</span>
+                            </div>
+                            <button
+                                class="choose-options-btn w-full mt-4 bg-[#0188bc] text-white text-sm py-3 rounded-xl transition hover:bg-[#01a3e2] hover:cursor-pointer duration-175">
+                                Choose options
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li
+                    class="product-card-item hover:shadow-lg transition duration-175 rounded-xl overflow-clip w-full max-w-80">
+                    <div class="product-card group w-full bg-white" data-brand="Maxon" data-sku="MXO-UNI-Y"
+                        data-category="3D GFX & VFX Tools" data-tags="Maxon Universe, Video Effects, Transitions"
+                        data-desc="GPU-accelerated video effects and transitions for editors and motion graphics artists.">
+                        <div class="product-image pt-[20px] px-[26px] pb-[34px] relative h-[250px] overflow-hidden">
+                            <div class="product-view h-full">
+                                <div class="product-view-cell w-full h-full">
+                                    <img src="./assets/product-images/Maxon_universe.jpg"
+                                        onerror="this.src='https://placehold.co/400x400/ffffff/7c3aed?text=Universe'"
+                                        class="w-full h-full object-contain" alt="Universe">
+                                </div>
+                            </div>
+                            <div class="hover-area absolute inset-0 z-10"></div>
+                            <button type="button" aria-label="Quick view"
+                                class="quickview-btn absolute top-3 right-3 z-30 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-700 opacity-0 translate-y-1 scale-90 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 hover:bg-[#0197d6] hover:text-white hover:border-[#0197d6] transition-all duration-200 ease-out cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info p-4">
+                            <h2 class="product-title text-lg font-semibold">Universe</h2>
+                            <div class="product-price-row flex flex-wrap items-center gap-3 mt-3">
+                                <span class="product-price text-xl font-bold">AED 1,299</span>
+                                <span class="product-old-price text-gray-400 line-through">AED 1,800</span>
+                                <span
+                                    class="product-discount bg-black text-white text-xs font-bold px-2 py-1 rounded">28%
+                                    OFF</span>
+                            </div>
+                            <button
+                                class="choose-options-btn w-full mt-4 bg-[#0188bc] text-white text-sm py-3 rounded-xl transition hover:bg-[#01a3e2] hover:cursor-pointer duration-175">
+                                Choose options
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li
+                    class="product-card-item hover:shadow-lg transition duration-175 rounded-xl overflow-clip w-full max-w-80">
+                    <div class="product-card group w-full bg-white" data-brand="AJA Video Systems"
+                        data-sku="KI-PRO-ULT-12G" data-category="Digital Recorders"
+                        data-tags="AJA Ki Pro, 12G-SDI, 4K/UHD Recorder, HDMI"
+                        data-desc="12G-SDI 4K/UltraHD/2K/HD File-Based Recorder and Player with Single-Channel 4K or Quad-Channel HD Recording.">
+                        <div class="product-image pt-[20px] px-[26px] pb-[26px] relative h-[250px] overflow-hidden">
+                            <div class="product-view h-full">
+                                <div class="product-view-cell w-full h-full">
+                                    <img src="./assets/product-images/KI_PRO_ULT_0.jpg"
+                                        onerror="this.src='https://placehold.co/400x400/ffffff/005680?text=AJA+Ki+Pro'"
+                                        class="w-full h-full object-contain" alt="AJA Ki Pro Ultra 12G">
+                                </div>
+                            </div>
+                            <div class="hover-area absolute inset-0 z-10"></div>
+                            <button type="button" aria-label="Quick view"
+                                class="quickview-btn absolute top-3 right-3 z-30 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-700 opacity-0 translate-y-1 scale-90 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 hover:bg-[#0197d6] hover:text-white hover:border-[#0197d6] transition-all duration-200 ease-out cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-info p-4">
+                            <h2 class="product-title text-lg font-semibold">
+                                AJA Ki Pro Ultra 12G DCI/UHD/HD Recorder and Player
+                            </h2>
+                            <div class="product-price-row flex flex-wrap items-center gap-3 mt-3">
+                                <span class="product-price text-xl font-bold">AED 5,599</span>
+                                <span class="product-old-price text-gray-400 line-through">AED 10,000</span>
+                                <span
+                                    class="product-discount bg-black text-white text-xs font-bold px-2 py-1 rounded">44%
+                                    OFF</span>
+                            </div>
+                            <button
+                                class="choose-options-btn w-full mt-4 bg-[#0188bc] text-white text-sm py-3 rounded-xl transition hover:bg-[#01a3e2] hover:cursor-pointer duration-175">
+                                Choose options
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Toast Notification for Add to Cart-->
+    <div id="product-toast"
+        class="fixed bottom-5 right-5 z-50 bg-gray-900 text-white text-xs sm:text-sm font-medium px-4 py-3 rounded-xl shadow-lg opacity-0 pointer-events-none translate-y-2 transition-all duration-200">
+        Added to cart!
+    </div>
+
+    <div id="quickview-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300 ease-out"
+        aria-hidden="true">
+        <div id="quickview-panel"
+            class="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 max-h-[90vh] scale-95 translate-y-3 transition-all duration-300 ease-out">
+            <button type="button" id="quickview-close" aria-label="Close modal"
+                class="absolute top-4 right-4 z-30 size-10 rounded-full bg-white border border-gray-200 shadow-xs flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div
+                class="md:col-span-6 bg-[#f8f9fa] p-6 sm:p-8 flex flex-col justify-between relative min-h-[340px] md:min-h-[520px]">
+                <div class="my-auto py-4 flex flex-col-reverse sm:flex-row items-center gap-4">
+                    <div id="qv-thumbnails" class="flex sm:flex-col gap-2.5 shrink-0 z-10"></div>
+                    <div class="relative flex-1 flex items-center justify-center h-60 sm:h-72 w-full">
+                        <img id="qv-main-image" src="" alt="Product Quickview"
+                            class="max-h-full max-w-full object-contain transition-opacity duration-200" />
+                    </div>
+                </div>
+                <div class="flex justify-center z-10">
+                    <div id="qv-dots"
+                        class="inline-flex items-center gap-2.5 bg-white px-4 py-2 rounded-full shadow-xs border border-gray-100">
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-6 flex flex-col justify-between max-h-[90vh] overflow-y-auto p-6 sm:p-8 space-y-4">
+                <div class="flex items-center gap-3 text-xs text-gray-500">
+                    <span>Brand: <strong id="qv-brand" class="text-gray-800 font-semibold">Maxon</strong></span>
+                    <span class="text-gray-300">|</span>
+                    <span>No reviews yet</span>
+                </div>
+                <h2 id="qv-title" class="text-xl sm:text-2xl font-semibold text-gray-900 leading-snug pr-8">Maxon One
+                </h2>
+                <div class="flex flex-wrap items-baseline gap-3 pb-3 border-b border-gray-100">
+                    <span id="qv-price" class="text-2xl font-bold text-[#107c10]">AED 6,000.00</span>
+                    <span id="qv-old-price" class="text-sm text-gray-400 line-through">AED 7,200</span>
+                    <span id="qv-discount"
+                        class="bg-[#0197d6]/10 text-[#0197d6] text-xs font-bold px-2.5 py-0.5 rounded-full">17%
+                        OFF</span>
+                </div>
+                <p id="qv-desc" class="text-gray-600 leading-relaxed text-sm"></p>
+                <div class="flex items-center gap-3">
+                    <div class="inline-flex items-center border border-gray-300 rounded-xl h-11 bg-white">
+                        <button type="button" id="qv-qty-minus" class="px-3.5 h-full text-gray-500">&minus;</button>
+                        <input id="qv-qty-input" type="text" value="1" readonly
+                            class="w-10 text-center text-sm font-semibold" />
+                        <button type="button" id="qv-qty-plus" class="px-3.5 h-full text-gray-500">&plus;</button>
+                    </div>
+                    <button type="button"
+                        class="flex-1 h-11 bg-[#0197d6] hover:bg-[#0182b8] text-white font-semibold text-sm rounded-xl px-5 cursor-pointer">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="pt-2 space-y-1 text-xs text-gray-600">
+                    <p><strong>SKU:</strong> <span id="qv-sku">MXO-Y</span></p>
+                    <p><strong>Categories:</strong> <span id="qv-category" class="text-[#0197d6]">3D GFX &amp; VFX
+                            Tools</span></p>
+                    <p><strong>Tags:</strong> <span id="qv-tags" class="text-gray-500">Maxon One</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-[70px] text-base">
+        <div class="container mx-auto px-[15px]">
+            <div class="footer-links py-[60px]">
+                <p class="mb-[1em]">
+                    <strong class="mr-[20px]">Broadcast Solutions:</strong>
+                    <a href="/category/bnc-sfp-option">BNC SFP Options</a>
+                    <a href="/category/control-panel">Control Panel</a>
+                    <a href="/category/aja-digital-recorders">Digital Recorder</a>
+                    <a href="/category/fiber-sfp-options">Fiber SFP Options</a>
+                    <a href="/category/frame-sync">Frame Sync</a>
+                    <a href="/category/ip-converters">IP Converters</a>
+                    <a href="/category/aja-mini-converters">Mini-Converters</a>
+                    <a href="/category/buy-aja-opengear">OpenGear</a>
+                    <a href="/category/pcie-cards">PCIe Cards</a>
+                    <a href="/category/routers">Routers</a>
+                    <a href="/category/streaming">Streaming</a>
+                </p>
+                <p class="mb-[1em]"><strong class="mr-[20px]">ProAV Solutions:</strong> <a
+                        href="/category/video-wall-controllers">Video Wall Controllers</a></p>
+                <p class="mb-[1em]"><strong class="mr-[20px]">Software:</strong> <a href="/category/3D-GFX-VFX-Tools">3D
+                        GFX
+                        &amp; VFX Tools</a></p>
+            </div>
+            <div class="footer-widgets justify-between flex-col sm:flex-row sm:flex-wrap gap-8 pb-12">
+                <aside class="widget widget_footer widget_contact-us">
+                    <h4 class="widget-title font-bold text-lg mb-[30px]">Contact us</h4>
+                    <div class="widget_content">
+                        <p class="text-[#666] mb-[1em]">Call us 24/7</p>
+                        <h3 class="text-2xl text-[#01a3e2] font-bold mb-[10px]">+971 4 4503795</h3>
+                        <p class="text-[#666] mb-[1em]">Office – #1114, Grosvenor Business Tower,<br>Barsha Heights -
+                            TECOM, UAE
+                            <br><a href="mailto:info@mediasysdubai.com">info@mediasysdubai.com</a>
+                        </p>
+                    </div>
+                </aside>
+                <aside class="widget widget_footer">
+                    <h4 class="widget-title font-bold text-lg mb-[30px]">Quick links</h4>
+                    <ul class="ps-list--link">
+                        <li><a href="/privacy-policy">Policy</a></li>
+                        <li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="/page/blank">Shipping</a></li>
+                        <li><a href="/return-policy">Return</a></li>
+                        <li><a href="/page/faqs">FAQs</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_footer">
+                    <h4 class="widget-title font-bold text-lg mb-[30px]">Company</h4>
+                    <ul class="ps-list--link">
+                        <li><a href="https://mediasysdubai.com/">About Us</a></li>
+                        <li><a href="https://mediasysdubai.com/blogs/">Blogs</a></li>
+                        <li><a href="https://mediasysdubai.com/contact-us/">Contact</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_footer">
+                    <h4 class="widget-title font-bold text-lg mb-[30px]">Business</h4>
+                    <ul class="ps-list--link">
+                        <li><a href="/account/checkout">Checkout</a></li>
+                        <li><a href="/account/user-information">My account</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./scripts/homepage.js"></script>
+    <script src="./scripts/product.js"></script>
+</body>
+
+</html>

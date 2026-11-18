@@ -1,0 +1,51 @@
+/* prevent vertical scroll bar glitch */
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* prevent horizontal scroll bar from marquee without breaking position: sticky */
+html,
+body {
+    overflow-x: clip;
+}
+
+/* Thumbnail  */
+.prod-thumb.active {
+  border-width: 2px;
+  border-color: #111827;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Plan Option */
+.plan-pill.active {
+  border-width: 2px;
+  border-color: #111827;
+  color: #111827;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+/* Image Transition */
+#main-product-image.fade-out {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.prod-tab-btn.active {
+  color: #111827;
+  border-bottom-color: #0197d6;
+  font-weight: 700;
+}
+
+/* Wishlist */
+#wishlist-toggle-btn.is-saved {
+  color: #f43f5e;
+  border-color: #fecdd3;
+  background-color: #fff1f2;
+}
+
+#wishlist-toggle-btn.is-saved svg {
+  fill: #f43f5e;
+}
